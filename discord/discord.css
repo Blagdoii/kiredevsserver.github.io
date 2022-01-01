@@ -8,8 +8,7 @@ html {
 }
 
 body {
- background: rgb(115,115,115);
- background: linear-gradient(125deg, rgba(115,115,115,1) 0%, rgba(29,29,29,1) 40%);
+   background-image: url("unknown.png");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
