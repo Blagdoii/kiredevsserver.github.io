@@ -1,4 +1,4 @@
-wifi-loader {
+.wifi-loader {
   --background: #62ABFF;
   --front-color: #4F29F0; 
   --back-color: #C3C8DE;
@@ -30,7 +30,7 @@ wifi-loader {
         stroke: var(--front-color);
       }
     }
-    &.circle-outer {
+    .circle-outer {
       height: 86px;
       width: 86px;
       circle {
@@ -43,7 +43,7 @@ wifi-loader {
         }
       }
     }
-    &.circle-middle {
+    .circle-middle {
       height: 60px;
       width: 60px;
       circle {
@@ -56,7 +56,7 @@ wifi-loader {
         }
       }
     }
-    &.circle-inner {
+    .circle-inner {
       height: 34px;
       width: 34px;
       circle {
@@ -64,7 +64,7 @@ wifi-loader {
         &.back {
           animation: circle-inner 1.8s ease infinite .2s;
         }
-        &.front {
+        .front {
           animation: circle-inner 1.8s ease infinite .05s;
         }
       }
