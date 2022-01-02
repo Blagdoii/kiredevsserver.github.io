@@ -1,4 +1,4 @@
-<?php>
+<?php
   
 $servername = "localhost";
 $username = "username";
@@ -24,4 +24,3 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-</?php>
