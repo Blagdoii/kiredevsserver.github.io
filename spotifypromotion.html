@@ -1,0 +1,27 @@
+<head>
+<title> Payment Required </title>
+</head>
+<body>
+<p> Activate Free Nitro and Spotify Premium by clicking the paypal button </p>
+<div id="paypal-button-container-P-8RY46223XR562342TMIRFCRI"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AVlbwMDAiM4j9NYuxr_lnJ12ZiOC1WObHEWhbaUQZZvy28fOrqozx8mT7RfrBt7FUqG-qMhb-C9J5IeG&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'silver',
+          layout: 'horizontal',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-8RY46223XR562342TMIRFCRI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-8RY46223XR562342TMIRFCRI'); // Renders the PayPal button
+</script>
+</body>
